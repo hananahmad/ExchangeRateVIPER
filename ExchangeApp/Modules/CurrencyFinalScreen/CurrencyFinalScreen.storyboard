@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Currency Final Screen View Controller-->
+        <scene sceneID="mP1-se-Azg">
+            <objects>
+                <viewController storyboardIdentifier="CurrencyFinalScreenViewController" id="Bbd-Qd-auf" customClass="CurrencyFinalScreenViewController" customModule="ExchangeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pbd-yH-Or4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="f5y-uX-YVP">
+                                <rect key="frame" x="5" y="319.66666666666669" width="383" height="213.00000000000006"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ppf-S4-GPi">
+                                        <rect key="frame" x="0.0" y="0.0" width="383" height="90"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkMark" translatesAutoresizingMaskIntoConstraints="NO" id="wlt-11-OiR">
+                                                <rect key="frame" x="0.0" y="0.0" width="383" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="9ac-7q-J3E"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="LeT-S5-C0e">
+                                        <rect key="frame" x="0.0" y="140" width="383" height="73"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hi congratulations you did great" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRA-MN-eTC">
+                                                <rect key="frame" x="0.0" y="0.0" width="383" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDb-CY-VX5">
+                                                <rect key="frame" x="0.0" y="49" width="383" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jb9-ts-0qA"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="f5y-uX-YVP" firstAttribute="centerY" secondItem="Pbd-yH-Or4" secondAttribute="centerY" id="8sJ-4d-iMY"/>
+                            <constraint firstItem="jb9-ts-0qA" firstAttribute="trailing" secondItem="f5y-uX-YVP" secondAttribute="trailing" constant="5" id="L7n-Kc-cN7"/>
+                            <constraint firstItem="f5y-uX-YVP" firstAttribute="leading" secondItem="jb9-ts-0qA" secondAttribute="leading" constant="5" id="a6P-Er-Aom"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="accountInfoLabel" destination="aRA-MN-eTC" id="YrX-uO-c7g"/>
+                        <outlet property="conversionRateLabel" destination="zDb-CY-VX5" id="xQM-3s-x98"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z00-tH-rZt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181.59999999999999" y="1589.9550224887557"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkMark" width="32" height="32"/>
+    </resources>
+</document>
